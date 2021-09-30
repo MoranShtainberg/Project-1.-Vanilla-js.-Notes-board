@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tasks</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="text-center display-1 fw-bold text-decoration-underline">My Task Board</h1>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col">
+                    <!--1 of 3-->
+            </div>
+
+            <div class="col-6">
+
+                    <form id="task_form_id"> 
+                        <div class="form-floating">
+                            <textarea class="form-control form_pad" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
+                            <label for="floatingTextarea">My Task Description</label>
+                            
+                            <div>
+                                Due Date: <input type="date" id="due_date" name="Due Date" class="form_pad" required>
+                            </div>
+
+                            <div>
+                                Due Time: <input type="time" id="due_time" name="Due Time" class="form_pad">
+                            </div>
+
+                            <div>
+                                <button type="submit" class="btn btn-primary form_pad" id="form_submit">Submit</button>
+                                <input type="button" onclick="reset_form()" value="Reset form" class="btn btn-warning form_pad">
+                            </div> 
+
+                            
+                        </div>
+
+                    </form>
+
+            </div>
+
+            <div class="col">
+                <!-- 3 of 3 -->
+            </div>
+        </div>
+    </div>
+                <!----------------------------------------------------cards--------------------------------------------------- -->
+
+
+    <div class="container">
+        <div class="row" id="row_id">
+             <!-- Div structure:
+            <div class="card col-lg-3 col-md-4 col-sm-6 note_bg">
+                <div class="card-body">
+                    <button type="button" class="btn-close" aria-label="Close"></button>
+                    <p class="p_max-height">card 1. task free text..</p>
+                    <div class="card-footer">
+                        <p class="footer_date">card footer: date</p>
+                        <p class="footer_time">card footer: time</p>                        
+                    </div>
+                </div>
+            </div>
+            -->
+        </div>
+    </div>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>

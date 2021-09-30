@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:  sans-serif, 'Brush Script MT', cursive;
+    height: 100vh;
+    background-image: url(./images/tile.jpg);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.note_bg{
+    background-image: url(./images/notebg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: bottom;
+    animation: note_opacity 2s ease-in;
+}
+
+@keyframes note_opacity{
+    0%{
+        opacity: 0.25;
+    }
+    25%{
+        opacity: 0.50;
+    }
+    50%{
+        opacity: 0.75;
+    }
+    75%{
+        opacity: 1.00;
+    }
+}
+    
+body>h1{
+    font-family: 'Brush Script MT', cursive;
+    margin-top: 1.5rem;
+}
+
+form{
+    background-image: url(./images/formbg.jpg);    
+    padding: 1rem 5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form_pad{
+    padding-top: 0.4rem;
+    margin-top: 0.45rem;
+}
+
+.p_max_height{
+    max-height: 15vh;
+   overflow: auto;
+}
+
+.footer_date, .footer_time{
+    margin: 0;
+    padding: 0;
+}
+
+#row_id{
+    transition-timing-function: cubic-bezier(1, 1, 0.58, 1);
+}
+
+.btn-close{
+    display: none;
+}
+
